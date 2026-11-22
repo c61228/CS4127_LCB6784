@@ -1070,4 +1070,20 @@ input[type="text"],input[type="email"], textarea {
 	.festival-card img {
 		height: 200px;
 	}
+
+	.timeline-item {
+        flex-direction: column;
+    }
+
+    .timeline-year {
+        margin-left: 90px;
+        margin-bottom: 10px;
+    }
+
+    .timeline-content {
+        width: calc(100% - 120px);
+        margin-left: 90px;
+        margin-right: 10px;
+        box-sizing: border-box;
+    }
 }
