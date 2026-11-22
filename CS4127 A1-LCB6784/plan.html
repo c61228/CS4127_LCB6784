@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brunei Tourism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Top Navigation Bar-->
+    <div class="nav-bar">
+
+        <!--Website Title-->
+        <h2 class="site-title">Brunei Tourism</h2>
+        <!--Dark/Light Toggle-->
+        <button onclick="myFunction()" class="mode-toggle">☀︎/⏾</button>
+
+        <!--Navigation Links-->
+        <nav class="site-nav">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover Brunei</a>
+            <a href="attractions.html">Places to Visit</a>
+            <a href="dining.html">Taste of Brunei</a>
+            <a class="active" href="plan.html">Plan Your Trip</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <!--Page Header-->
+    <header>
+        <h1 id="title">Plan Your Trip</h1>
+    </header>
+
+    <main>
+
+        <!-- Interactive Checklist - https://www.quackit.com/html/templates/lists/interactive_checklist.cfm-->
+        <div class="travel-checklist">
+            <h2>Travel Checklist</h2>
+
+            <!--Progress Bar-->
+            <div class="progress">
+                <div class="progress-bar-label">
+                    <span>Tasks Completed</span>
+                    <span id="progress-text">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <!--Progress Bar Fill-->
+                    <div class="progress-bar-fill" id="progress-bar-fill" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <!--Checklist Item 1-->
+            <ul class="checklist">
+                <li class="checklist-item">
+                    <label class="checklist-item-label" for="task1">
+                        <input class="checklist-item-checkbox" type="checkbox" id="task1">
+                    <span class="label-text">Check Passport Validity</span>
+                    </label>
+                </li>
+
+                <!--Checklist Item 2-->
+                <li class="checklist-item">
+                    <label class="checklist-item-label" for="task2">
+                        <input class="checklist-item-checkbox" type="checkbox" id="task2">
+                    <span class="label-text">Check Visa Requirement</span>
+                    </label>
+                </li>
+   
+                <!--Checklist Item 3-->
+                <li class="checklist-item">
+                    <label class="checklist-item-label" for="task3">
+                        <input class="checklist-item-checkbox" type="checkbox" id="task3">
+                    <span class="label-text">Book Flight</span>
+                    </label>
+                </li>
+
+                <!--Checklist Item 4-->
+                <li class="checklist-item">
+                    <label class="checklist-item-label" for="task4">
+                        <input class="checklist-item-checkbox" type="checkbox" id="task4">
+                    <span class="label-text">Book Accommodation</span>
+                    </label>
+                </li>
+
+                <!--Checklist Item 5-->
+                <li class="checklist-item">
+                    <label class="checklist-item-label" for="task5">
+                        <input class="checklist-item-checkbox" type="checkbox" id="task5">
+                    <span class="label-text">Plan Itinerary</span>
+                    </label>
+                </li>
+
+                <!--Checklist Item 6-->
+                <li class="checklist-item">
+                    <label class="checklist-item-label" for="task6">
+                        <input class="checklist-item-checkbox" type="checkbox" id="task6">
+                    <span class="label-text">Pack Essentials</span>
+                    </label>
+                </li>
+
+                <!--Checklist Item 7-->
+                <li class="checklist-item">
+                    <label class="checklist-item-label" for="task7">
+                        <input class="checklist-item-checkbox" type="checkbox" id="task7">
+                    <span class="label-text">Exchange Currency</span>
+                    </label>
+                </li>
+            </ul>
+
+        </div>
+
+        <section class="plan-container">
+            
+            <!--Plan Card - Visa Requirement-->
+            <div class="plan-card">
+                <!--Plan Card Title-->
+                <h2 class="plan-title">🌐︎  Visa Requirements</h2>
+                <!--Plan Card Description - Link to Official Brunei Immigration Website-->
+                <p>Visit the <a href="https://www.mfa.gov.bn/Pages/Visa-Information.aspx" class="link">Official Brunei Immigration Website</a>
+                to check if you need a Visa to visit Brunei.</p>
+            </div>
+
+            <!--Plan Card - Getting to Brunei-->
+            <div class="plan-card">
+                <!--Plan Card Title-->
+                <h2 class="plan-title">✈︎  Getting to Brunei</h2>
+                <!--Plan Card Description - Link to RBA Website-->
+                <p>Visit <a href="https://www.flyroyalbrunei.com/brunei/en/" class="link">Royal Brunei Airlines</a> 
+                to book a flight.</p>
+            </div>
+
+            <!--Plan Card - Accommodation-->
+            <div class="plan-card">
+                <!--Plan Card Title-->
+                <h2 class="plan-title">🏠︎  Accommodation</h2>
+                <!--Plan Card Description - Link to Booking.com-->
+                <p>Visit <a href="https://www.booking.com/country/bn.en.html?aid=803109&pagename=bn&label=msn-jhj**43RGGeoEu1r3B2HjA-79920931363820:tikwd-79921127936760:loc-25:neo:mte:lp142033:dec:cid578719774:agid1278732669021361:clkidb0b1df21ce031db703ebb5c51856c3dd&utm_campaign=Accommodation%20-%20Brunei%20Darussalam&utm_medium=cpc&utm_source=bing&utm_term=jhj**43RGGeoEu1r3B2HjA&msclkid=b0b1df21ce031db703ebb5c51856c3dd&utm_content=Cy%3A32-Brunei%20Darussalam" class="link">
+                Booking.com</a> to book an accommodation.</p>
+            </div>
+
+        </section>
+
+        <!--Transport Options Section-->
+        <section class="transport-container">
+            <!--Transport Section Title-->
+            <h2 class="plan-title">Getting Around Brunei</h2>
+            <!--Transport Section Introduction-->
+            <p>Getting around the Abode of Peace is easy, with a variety of convenient transport options to help you explore Brunei at your own pace.</p>
+
+            <!--Transport Card - Dart-->
+            <div class="transport-card">
+                <!--Transport Card Title-->
+                <h2>🚘 Dart</h2>
+                <!--Transport Card Description-->
+                    <p>Dart is Brunei's local transport app, similar to Uber or Grab. Book a ride conveniently through the app!</p>
+                    <!--Dart App Download Links-->
+                    <p>Download Dart on <a href="https://play.google.com/store/apps/details?id=com.dartbrunei.darttaxi.rider&pcampaignid=web_share" class="link">
+                    Google Play Store</a> or <a href="https://apps.apple.com/us/app/dart-rider/id1351551803" class="link">Apple App Store</a>.
+                    </p>
+            </div>
+
+            <!--Transport Card - Taxi-->
+            <div class="transport-card">
+                <!--Transport Card Title-->
+                <h2>🚕 Taxi</h2>
+                <!--Transport Card Description-->
+                <p>Official taxis can be found at major hotels, the Brunei International Airport, 
+                    and designated taxi stands around Bandar Seri Begawan. Hotel staff can often assist with booking a taxi for you.</p>
+               </div>
+
+               <!--Transport Card - Bus-->
+            <div class="transport-card">
+                <!--Transport Card Title-->
+                <h2>🚏 Bus</h2>
+                <!--Transport Card Description-->
+                <p>Brunei's public bus system provides a practical way to traverse Bandar Seri Begawan and its immediate surroundings. 
+                    While routes can be less frequent outside peak hours, it’s a reliable option for many key destinations.
+                Visit <a href="https://www.jpd.gov.bn/public-bus-routes/" class="link">Brunei's Land Transport Department's Website</a> to view bus routes.</p>
+            </div>
+
+            <!--Transport Card - Car Rental-->
+            <div class="transport-card">
+                <!--Transport Card Title-->
+                <h2>🚗 Car Rental</h2>
+                <!--Transport Card Description-->
+                <p>Have a International Driving License? Rent a car for maximum flexibility getting around !
+                Check out <a href="https://www.hertz.com/us/en/location/brunei/brunei/bwnt50" class="link">Hertz</a> for more car rental details.</p>
+            </div>
+    
+        </section>
+ 
+
+    </main>
+    <footer></footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

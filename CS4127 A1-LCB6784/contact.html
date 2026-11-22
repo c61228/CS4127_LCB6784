@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brunei Tourism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Top Navigation Bar-->
+    <div class="nav-bar">
+
+        <!--Website Title-->
+        <h2 class="site-title">Brunei Tourism</h2>
+        <!--Dark/Light Toggle-->
+        <button onclick="myFunction()" class="mode-toggle">☀︎/⏾</button>
+
+        <!--Navigation Links-->
+        <nav class="site-nav">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover Brunei</a>
+            <a href="attractions.html">Places to Visit</a>
+            <a href="dining.html">Taste of Brunei</a>
+            <a href="plan.html">Plan Your Trip</a>
+            <a class="active" href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <!--Page Header-->
+    <header>
+        <h1 id="title">Contact</h1>
+    </header>
+
+    <main>
+
+        <!--Link Section-->
+        <section class="link-container">
+
+            <!--Link Card - Happening Events-->
+            <div class="link-card">
+                <!--Link Card Title-->
+                <h2>Happening/Upcoming Events</h2>
+                <!--Link Card Desription-->
+                <p>Visit <a href="https://www.instagram.com/bruneiweekender/" class="link">bruneiweekender on Instagram</a> 
+                for the most recent updates of events happening.</p>
+            </div>
+
+            <!--Link Card - Official Brunei Tourism Website-->
+            <div class="link-card">
+                <!--Link Card Title-->
+                <h2>Official Brunei Tourism</h2>
+                <!--Link Card Desription-->
+                <p>Visit the <a href="https://www.bruneitourism.com/" class="link">Offical Brunei Tourism website</a> for more information.</p>
+            </div>
+
+        </section>
+
+        <!--Contact Form-->
+        <section class="form">
+            <fieldset>
+                <h2><legend>Contact Form</legend></h2>
+                <form action="/submit-form" method="post" class="contact-form">
+
+                    <!--Fullname-->
+                    <label for="fullname">Fullname</label>
+                    <input type="text" id="fullname" name="fullname" required>
+
+                    <!--Email-->
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <!--Message Textarea-->
+                    <label>Suggestions/Messages</label>
+                    <textarea id="suggestion" name="suggestion" placeholder="Please enter your suggestion/message."></textarea>
+
+                    <div class="buttons">
+                        <!--Submit Button-->
+                        <input type="submit" value="Submit" id="button">
+
+                        <!--Clear Button-->
+                        <input type="reset" value="Clear" id="button">
+                    </div>
+
+                </form>
+            </fieldset>
+        </section>
+
+    </main>
+    <footer></footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

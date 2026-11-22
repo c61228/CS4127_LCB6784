@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brunei Tourism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!--Top Navigation Bar-->
+    <div class="nav-bar">
+
+        <!--Website Title-->
+        <h2 class="site-title">Brunei Tourism</h2>
+        <!--Dark/Light Mode Toggle-->
+        <button onclick="myFunction()" class="mode-toggle">☀︎/⏾</button>
+
+        <!--Navigation Links-->
+        <nav class="site-nav">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover Brunei</a>
+            <a href="attractions.html">Places to Visit</a>
+            <a class="active" href="dining.html">Taste of Brunei</a>
+            <a href="plan.html">Plan Your Trip</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <!--Page Header-->
+    <header>
+        <h1 id="title">Taste of Brunei</h1>
+    </header>
+
+    <main>
+
+        <!--Local Dishes Title-->
+        <h2 id="dining-title">Must-try Local Dishes</h2>
+        <!--Subtext-->
+        <h6 id="click-card">CLICK ON CARD FOR MORE DETAILS</h6>
+        
+
+        <!--Local Dish Section-->
+        <section class="local-dish">
+
+            <!--Food Card - Ambuyat-->
+            <div class="food-container" onclick="foodPopUp('ambuyat')">
+                <!--Food Image - https://www.pinterest.com/pin/650488739960712590/-->
+                <img src="images/ambuyat.jpg" alt="Ambuyat">
+                <h2>Ambuyat</h2>
+            </div>
+
+            <!--Description Pop Up Window - Ambuyat-->
+            <div id="popup-ambuyat" class="popup hidden">
+                <!--Food Image - https://www.pinterest.com/pin/650488739960712590/-->
+                <img src="images/ambuyat.jpg" alt="Ambuyat">
+                <p><bold class="dish-name">Ambuyat</bold> is the national dish of Brunei. It is a dish derived from the interior trunk of the sago palm. 
+                    It is a starchy, bland substance similar to tapioca. Ambuyat is eaten with a linked pair of bamboo chopsticks 
+                    called chandas, by rolling the starch around the prongs and then dipping it into a sauce.</p>
+                    <!--Pop Up Window Close Button - Ambuyat-->
+                    <button onclick="closeFn('ambuyat')">✕</button>
+            </div>
+
+            <!--Food Card - Kelupis-->
+            <div class="food-container" onclick="foodPopUp('kelupis')">
+                <!--Food Image - https://www.tasteatlas.com/kelupis/wheretoeat-->
+                <img src="images/kelupis.jpg" alt="Kelupis">
+                <h2>Kelupis</h2>
+            </div>
+
+            <!--Description Pop Up Window - Kelupis-->
+            <div id="popup-kelupis" class="popup hidden">
+                <!--Food Image - https://www.tasteatlas.com/kelupis/wheretoeat-->
+                <img src="images/kelupis.jpg" alt="Kelupis">
+                <p><bold class="dish-name">Kelupis</bold> is a traditional kuih for the people of East Malaysia and Brunei. 
+                    Kelupis, which is made from glutinous rice mixed with coconut milk and a little salt, 
+                    is usually eaten with side dishes such as meat or chicken rendang and curry.</p>
+                    <!--Pop Up Window Close Button - Kelupis-->
+                    <button onclick="closeFn('kelupis')">✕</button>
+            </div>
+
+            <!--Food Card - Nasi Katok-->
+            <div class="food-container" onclick="foodPopUp('nasikatok')">
+                <!--Food Image - https://travelfoodatlas.com/brunei-food-->
+                <img src="images/nasikatok.jpg" alt="Nasi Katok">
+                <h2>Nasi Katok</h2>
+            </div>
+
+            <!--Description Pop Up Window - Nasi Katok-->
+            <div id="popup-nasikatok" class="popup hidden">
+                <!--Food Image - https://travelfoodatlas.com/brunei-food-->
+                <img src="images/nasikatok.jpg" alt="Nasi Katok">
+                <p><bold class="dish-name">Nasi Katok</bold> is a dish originating from Brunei. Nasi katok is traditionally
+                     composed of steamed rice, ayam goreng (fried chicken) and a spicy chilli sambal sauce, 
+                     often presented as individual servings wrapped in brown paper or contained within boxes.</p>
+                     <!--Pop Up Window Close Button - Nasi Katok-->
+                    <button onclick="closeFn('nasikatok')">✕</button>
+            </div>
+
+            <!--Food Card - Kuih-->
+            <div class="food-container" onclick="foodPopUp('kuih')">
+                <!--Food Image - https://live.staticflickr.com/7412/9425965995_2b01563c37_z.jpg-->
+                <img src="images/kuih.jpg" alt="Kuih">
+                <h2>Kuih</h2>
+            </div>
+
+            <!--Description Pop Up Window - Kuih-->
+            <div id="popup-kuih" class="popup hidden">
+                <!--Food Image - https://live.staticflickr.com/7412/9425965995_2b01563c37_z.jpg-->
+                <img src="images/kuih.jpg" alt="Kuih">
+                <p><bold class="dish-name">Kuih</bold> are bite-sized snack or dessert foods. There are varities of kuih in Brunei, 
+                    including Kuih Lapis, Kuih Seri Muka, Kuih Ketayap, Kuih Bingka, Kuih Cincin, Kuih Dadar,
+                     and more.
+                </p>
+                <!--Pop Up Window Close Button - Kuih-->
+                <button onclick="closeFn('kuih')">✕</button>
+            </div>
+
+            <!--Transparent Overlay Under Pop Up Window-->
+            <div id="overlay" class="hidden"></div>
+
+        </section>
+
+        <!--Dining Places Title-->
+        <h2 id="dining-title">Where to eat in Brunei</h2>
+        <!--Subtext-->
+        <h6 id="click-card">CLICK ON CARD FOR LOCATION</h6>
+
+        <!--Dining Places Section-->
+        <section class="food-places">
+            
+            <!--Map Location Link - Gadong Night Market-->
+            <a href="https://maps.app.goo.gl/HvyikgEnPEgaYShG9">
+            <div class="place-card">
+                <!--Place Image - https://www.visitsoutheastasia.travel/top-sights/gadong-night-market/-->
+                <img src="images/pasarmalam.jpg" alt="Gadong Night Market" width="500px">
+                <!--Dining Place Title-->
+                <h2>Gadong Night Market</h2>
+                <!--Dining Place Description-->
+                <p>Brunei's most popular evening street food hub, packed with dozens of stalls selling affordable 
+                    local favorites like grilled chicken wings, satay, nasi katok, grilled seafood, and traditional kuih.</p>
+            </div>
+            </a>
+
+            <!--Map Location Link - Aminah Arif Restaurant-->
+            <a href="https://maps.app.goo.gl/BPPLhjYyn5SZnF6Z6">
+            <div class="place-card">
+                <!--Place Image - http://www.maksinwee.com/2016/05/restoran-aminah-arif-kiulap-brunei.html-->
+                <img src="images/aminaharif.jpg" alt="Aminah Arif Restaurant" width="500px">
+                <!--Dining Place Title-->
+                <h2>Aminah Arif Restaurant</h2>
+                <!--Dining Place Description-->
+                <p>A well-known local eatery famous for serving authentic Bruneian heritage cuisine, best known as 
+                    the go-to spot for trying ambuyat alongside traditional dipping sauces (cacah), grilled fish, and local side dishes.</p>
+            </div>
+            </a>
+            
+            <!--Map Location Link - Excapde Restaurant-->
+            <a href="https://maps.app.goo.gl/Vg2qPLdpjqJ4WmM38">
+            <div class="place-card">
+                <!--Place Image - https://bruneimaps.com/listing/excapade-japanese-restaurant-seria/-->
+                <img src="images/excapade.jpg" alt="Excapade Japanese Restaurant" width="500px">
+                <!--Dining Place Title-->
+                <h2>Excapade Japanese Restaurant</h2>
+                <!--Dining Place Description-->
+                <p>Brunei's premier homegrown Japanese restaurant chain, beloved by locals for its extensive menu of fresh sushi rolls, sashimi, 
+                    bento sets, and teppanyaki across multiple branches nationwide.</p>
+            </div>
+            </a>
+
+            <!--Map Location Link - Spaghettini Restaurant-->
+            <a href="https://maps.app.goo.gl/onBTWN7HaC8fEDmRA">
+            <div class="place-card">
+                <!--Place Image - https://www.tripadvisor.com/Restaurants-g293937-Brunei_Darussalam.html-->
+                <img src="images/spaghettini.jpg" alt="Spaghettini Italian Restaurant" width="500px">
+                <!--Dining Place Title-->
+                <h2>Spaghettini Italian Restaurant</h2>
+                <!--Dining Place Description-->
+                <p>An upscale, fine-dining Italian restaurant located inside The Empire Brunei, offering handmade pastas, wood-fired 
+                    specialties, and classic Mediterranean dishes in an elegant setting.</p>
+            </div>
+            </a>
+            
+
+        </section>
+
+    </main>
+    <footer></footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
