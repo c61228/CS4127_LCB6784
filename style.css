@@ -1,0 +1,1073 @@
+/*Body Styling*/
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.6;
+	background-color: #f5f5f5 ;
+	color: #333;
+}
+
+/*General h1, h2 Styling*/
+h1, h2 {
+	color: #000000;
+}
+
+/*General Paragraph Styling*/
+p {
+	background-color: #f5f5f5;
+	color: #1e293b;
+	font-style: italic;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+/*All Styling*/
+a {
+	text-decoration: none;
+}
+
+
+/*Navigation Bar Styling*/
+.nav-bar {
+	display: flex;
+	top: 0;
+	justify-content: space-between;
+	align-items: center;
+	width:100%;
+	position:sticky;
+	gap: 1rem;
+	background-color: #ffffff;
+	padding: 0.5rem;
+	box-sizing: border-box;
+	z-index: 1000;
+	box-shadow: 0 4px 3px #ababab33;
+}
+
+/*Website Title Styling*/
+.site-title {
+	justify-content: left;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-left: 1rem;
+}
+
+/*Dark/Light Mode Toggle Styling*/
+.mode-toggle {
+	background-color: #f8cc25;
+	color: #000000;
+	border-radius: 20px;
+	border: 2px solid #f8cc25;
+	letter-spacing: 2px;
+	margin-left: 0;
+}
+
+/*Dark Mode Styling*/
+.dark-mode {
+		background-color: #343434;
+		color: #ffffff;
+
+		p {
+			background-color: #272727;
+			color: #ffffff;
+		}
+
+		.nav-bar {
+			background-color: #000000;
+		}
+
+		.site-title {
+			color: #ffffff;
+		}
+
+		.site-nav a {
+			color: #ffffff;
+		}
+
+		.index-card {
+			background-color: #000000;
+		}
+
+		.index-card h2 {
+			color: #ffffff;
+		}
+
+		.discover-card {
+			background-color: #000000;
+		}
+
+		.discover-card h2 {
+			color: #ffffff;
+		}
+
+		.timeline::before {
+			background-color: #ffffff;
+		}
+
+		.timeline-dot {
+			background-color: #ffffff;
+			border: 4px solid #1e293b;
+		}
+
+		.timeline-content {
+			background-color: #000000;
+		}
+
+		.festival-card {
+			background-color: #000000;
+		}
+
+		#attraction-title {
+			color: #ffffff;
+		}
+
+		#click-card {
+			color: #d3b300;
+			background-color: #000000;
+		}
+
+		.attraction-card {
+			background-color: #000000;
+		}
+
+		.attraction-card h2 {
+			color: #ffffff;
+		}
+
+		.food-container {
+			background-color: #000000;
+		}
+
+		#dining-title {
+			color: #ffffff;
+		}
+
+		.food-container h2 {
+			color: #ffffff;
+		}
+
+		.place-card {
+			background-color: #000000;
+		}
+
+		.place-card h2 {
+			color: #ffffff;
+		}
+
+		.travel-checklist {
+			--checklist-accent-color: #ffd900;
+    		--checklist-border-color: #cbd5e1;
+    		--checklist-secondary-text-color: #64748b;
+    		background-color: #000000;
+		}
+
+		.travel-checklist h2 {
+			color: #ffffff;
+		}
+
+		.progress-bar {
+			background-color: #1e293b;
+		}
+
+		.plan-card {
+			background-color: #000000;
+		}
+
+		.plan-title {
+			color: #ffffff;
+		}
+
+		.transport-container {
+			background-color: #000000;
+		}
+
+		.transport-card {
+			background-color: #000000;
+		}
+
+		.transport-card h2 {
+			color: #ffffff;
+		}
+
+		.link:hover {
+			background-color: #ffffff;
+		}
+
+		.link-card {
+			background-color: #000000;
+		}
+
+		form {
+			background-color: #000000;
+			color: #ffffff;
+			border: 2px solid #c7c7c7;
+		}
+
+		fieldset {
+			background-color: #000000;
+			color: #ffffff;
+		}
+
+		legend {
+			color: #ffffff;
+		}
+
+		input[type="text"],input[type="email"], textarea {
+			border: 2px solid #c7c7c7;
+			background-color: #3d3d3d;
+		}
+
+		#button:hover {
+			background-color: #ffffff;
+			border: 2px solid #ffffff;
+			color:#f8cc25;
+		}
+
+	.popup {
+		background-color: #000000;
+	}
+
+}
+
+/*Navigation Link Styling*/
+.site-nav {
+	align-items: center;
+	display: flex;
+	gap: 0.2rem;
+	margin-right: 0.5rem;
+}
+
+/*Navigation Link Styling All*/
+.site-nav a {
+	color: #1e293b;
+	text-decoration: none;
+	padding:0.3rem 2rem;
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+/*Navigation Link Styling when hover*/
+.site-nav a:hover {
+	color:#ffd900;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+/*Navigation Link Styling when active*/
+.site-nav a.active{
+	background-color: #ffd900;
+	color: #1e293b;
+	border-radius: 10px;
+}
+
+/*Header Styling*/
+header {
+	background-color: #ffd900;
+	/*https://www.bing.com/images/search?view=detailV2&ccid=Yr2G0PbK&id=5900D779C40B96C4F4BCBE768375256402394731&thid=OIP.Yr2G0PbKxuwjq9OzkHqYWgHaHa&mediaurl=https%3A%2F%2Fimg.freepik.com%2Fpremium-photo%2Fretro-geometric-pattern-repeat-fabric-print-damask-style-seamless-pattern-background-mosaic-ornament-vintage-style-design-prints-fabrics_35148-6711.jpg&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.62bd86d0f6cac6ec23abd3b3907a985a%3Frik%3DMUc5AmQldYN2vg%26pid%3DImgRaw%26r%3D0&exph=626&expw=626&q=brunei+traditional+pattern&FORM=IRPRST&ck=6C574128B9CE1059FF8DEE4211BE99FC&selectedIndex=11&itb=0&cw=1272&ch=668&ajaxhist=0&ajaxserp=0*/
+	background-image: url('images/headerbg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	justify-content: center;
+	text-align: center;
+	padding: 1rem;
+}
+
+/*Page Header Title Styling*/
+#title {
+	font-size: 3rem;
+	padding: 0.1rem 1.5rem;
+	margin: 2rem auto;
+	width: fit-content;
+	font-weight: bolder ;
+	color: #ffffff;
+	letter-spacing: 6px;
+	background-color: #000000;
+	backdrop-filter: blur(4px);
+	border: 2px solid #f8cc25;
+	border-radius: 10px;
+	box-shadow: 0 8px 20px #00000040
+}
+
+/*Index Card Styling*/
+.index-card {
+	background-color: #ffffff;
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px #00000033;
+	border: 3px solid #ffd900;
+}
+
+/*Index Card Text Styling*/
+.index-card p {
+	font-weight: bold;
+}
+
+/*Index Card Title Styling*/
+.index-card h2 {
+	font-size: 1.6rem;
+	margin-left: 0.5rem;
+	font-weight: bold;
+}
+
+/*Index Card Image Styling*/
+.index-card img {
+	width: 100%;
+	height: 300px;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+	object-fit: cover;
+	object-position: center;
+	padding: 0;
+	margin: 0;
+}
+
+/*Discover Card Styling*/
+.discover-card {
+	background-color: #ffffff;
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px #00000033;
+	border: 3px solid #ffd900;
+}
+
+/*Discover Card Title Styling*/
+.discover-card h2 {
+	font-size: 1.6rem;
+	margin-left: 0.5rem;
+	font-weight: bold;
+}
+
+/*Discover Card Image Styling*/
+.discover-card img {
+	width: 100%;
+	height: 350px;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+	object-fit: cover;
+	object-position: center;
+	padding: 0;
+	margin: 0;
+}
+
+/*Timeline Container Styling*/
+.timeline {
+	position: relative;
+	margin: 2rem 0;
+	max-width: 1000px;
+}
+
+/*Timeline Vertical Line Styling*/
+.timeline::before {
+	content: "";
+	position: absolute;
+	left: 60px;
+	top: 0;
+	bottom: 0;
+	width: 4px;
+	background-color: #3d3d3d;
+}
+
+/*Timeline Item Styling*/
+.timeline-item {
+	display: flex;
+	align-items: flex-start;
+	position: relative;
+	margin-bottom: 40px;
+	text-align: left;
+}
+
+/*Timeline Dot Styling*/
+.timeline-dot {
+	position: absolute;
+    left: 49px;
+    top: 10px;
+    width: 18px;
+    height: 18px;
+    background-color: #1e293b;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    z-index: 1;
+    box-sizing: content-box;
+}
+
+
+/*Timeline Year Styling*/
+.timeline-year {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-left: 100px;
+	margin-top: 0.5rem;
+}
+
+
+/*Timeline Content Styling*/
+.timeline-content {
+	flex:1;
+	margin-left: 30px;
+	margin-right: 20px;
+	background-color: #ffffff;
+	border: 2px solid #ffd900;
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+
+/*Festival Card Container Styling*/
+.festival-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	gap: 10px;
+	padding: 1rem;
+	margin: 0.5rem;
+}
+
+
+/*Festival Card Styling*/
+.festival-card {
+	background-color: #ffffff;
+	padding: 1rem;
+	margin: 0.5rem;
+	width: 310px;
+	border: 3px solid #ffd900;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px #00000033;
+}
+
+
+/*Festival Card Image Styling*/
+.festival-card img {
+	width: 100%;
+	height: 300px;
+	border-radius: 10px;
+	object-fit: cover;
+	object-position: center;
+}
+
+
+/*Attraction Container Title Styling*/
+#attraction-title {
+	color: #000000;
+	font-size: 1.7rem;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 0;
+	margin-top: 2rem;
+}
+
+
+/*Attraction Card Container Styling*/
+.attraction-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: stretch;
+	gap: 20px;
+	padding: 2rem;
+	padding-top: 1rem;
+	margin: 0.5rem;
+	border-radius: 10px;
+}
+
+
+/*Attraction Card Styling*/
+.attraction-card {
+	background-color: #ffffff;
+	padding: 1rem;
+	width: 100%;
+	border: 3px solid #ffd900;
+	border-radius: 10px;
+	box-sizing: border-box;
+	box-shadow: 0 4px 6px #00000033;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/*Attraction Card Image Styling*/
+.attraction-card img {
+	width: 100%;
+	height: 300px;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+	object-fit: cover;
+	object-position: center;
+}
+
+
+/*Attraction Card Title Styling*/
+.attraction-card h2 {
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+
+/*Attraction Card Styling when hover*/
+.attraction-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 20px #00000033;
+}
+
+
+/*Subtext Styling*/
+#click-card {
+	text-align: center;
+	font-size: 1rem;
+	color: #f8cc25 ;
+	letter-spacing: 5px;
+	font-style: italic;
+	margin:1rem auto;
+	padding: 0.2rem 1rem;
+	background-color: #ffffff;
+	width: fit-content;
+	border-radius: 30px;
+}
+
+
+/*Local Dish Card Styling*/
+.local-dish {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: stretch;
+	gap: 20px;
+	padding: 2rem;
+	padding-top: 1rem;
+	margin: 0.5rem;
+	border-radius: 10px;
+}
+
+
+/*Food Container Styling*/
+.food-container {
+	background-color: #ffffff;
+	padding: 1rem;
+	width: 100%;
+	border: 3px solid #ffd900;
+	border-radius: 10px;
+	box-sizing: border-box;
+	box-shadow: 0 4px 6px #00000033;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/*Food Container Image Styling*/
+.food-container img {
+	width: 100%;
+	height: 300px;
+	border-radius: 10px;
+	object-fit: cover;
+	object-position: center;
+}
+
+
+/*Places Title Styling*/
+#dining-title {
+	color: #1e293b;
+	font-size: 1.7rem;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+
+/*Food Title Styling*/
+.food-container h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin: 1rem;
+}
+
+
+/*Food Container Styling when hover*/
+.food-container:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 20px #00000033;
+}
+
+
+/*Pop-up Window Overlay Styling*/
+#overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #00000080;
+            z-index: 999;
+        }
+
+
+/*Pop-Up Window and Overlay Styling when hidden*/
+.hidden {
+	display: none;
+}
+
+
+/*Pop-Up Window Styling*/
+.popup {
+	position: fixed;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 1rem;
+	background-color: #ffffff;
+	border: 2px solid #ffd900;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px #00000033;
+	z-index: 1000;
+}
+
+
+/*Pop-Up Window Image Styling*/
+.popup img {
+	width: 100%;
+	height: 300px;
+	border-radius: 10px;
+	margin-bottom: 0.5rem;
+	object-fit: cover;
+	object-position: center;
+}
+
+
+/*Dish Name Styling*/
+.dish-name {
+	color: #d3b300;
+	font-weight: bold;
+	font-size: 1.3rem;
+	margin-right: 0.2rem;
+}
+
+
+/*Pop-Up Window Close Button Styling*/
+.popup button {
+	display: block;
+	margin: 0.5rem auto;
+	padding: 0.5rem 1rem;
+	background-color: #ffd900;
+	border-radius: 30px;
+	border: 2px solid #ffd900;
+	font-weight: bold;
+}
+
+
+/*Place Card Container Styling*/
+.food-places {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: stretch;
+	gap: 20px;
+	padding: 2rem;
+	padding-top: 1rem;
+	margin: 0.5rem;
+	border-radius: 10px;
+}
+
+
+/*Place Card Styling*/
+.place-card {
+	background-color: #ffffff;
+	padding: 1rem;
+	width: 100%;
+	border: 3px solid #ffd900;
+	border-radius: 10px;
+	box-sizing: border-box;
+	box-shadow: 0 4px 6px #00000033;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/*Place Card Title Styling*/
+.place-card h2 {
+	margin-left: 1rem;
+}
+
+/*Place Card Image Styling*/
+.place-card img {
+	width: 100%;
+	height: 300px;
+	border-radius: 10px;
+	object-fit: cover;
+	object-position: center;
+}
+
+/*Place Card Styling when hover*/
+.place-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 20px #00000033;
+}
+
+/* Adapted from Interactive Checklist Template, n.d. */
+.travel-checklist {
+	--checklist-accent-color: #ffd900;
+    --checklist-border-color: #cbd5e1;
+    --checklist-secondary-text-color: #64748b;
+    background-color: #ffffff;
+    border-radius: 10px;
+	border: 3px solid #ffd900;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.travel-checklist *,
+.travel-checklist *::before,
+.travel-checklist *::after {
+    box-sizing: border-box;
+}
+        
+/*Checklist Header Styling*/
+.travel-checklist .list-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+        
+/*Checklist Title Styling*/
+.travel-checklist h2 {
+    font-size: 1.75rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	color: #000000;
+}
+        
+/*Progress Bar Container Styling*/
+.progress {
+    margin-bottom: 2rem;
+}
+
+/*Progress Bar Label Styling*/
+.progress-bar-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--checklist-secondary-text-color);
+    margin-bottom: .5rem;
+}
+    
+/*Progress Bar Styling*/
+.progress-bar {
+    width: 100%;
+    height: .75rem;
+    background-color: #cfcfcf;
+    border-radius: 999px;
+    overflow: hidden;
+}
+        
+/*Progress Bar Fill Styling*/
+.progress-bar-fill {
+    height: 100%;
+    background-color: var(--checklist-accent-color);
+    border-radius: 999px;
+    transition: width 0.3s ease-in-out;
+}
+
+/*Checklist Styling*/
+.checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+        
+/*Checklist Item Styling*/
+.checklist li {
+    padding: .75rem 0;
+    border-top: 1px solid var(--checklist-border-color);
+}
+
+.checklist li:first-child {
+    border-top: none;
+}
+
+/* Hides the default checkbox but keeps it accessible */
+.checklist-item-checkbox {
+    opacity: 50;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+}
+
+/*Checlist Item Styling*/
+.checklist-item-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+/* The custom checkbox appearance */
+.checklist-item-label::before {
+    content: '';
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid var(--checklist-border-color);
+    border-radius: .25rem;
+    flex-shrink: 0;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+        
+.checklist-item-label .label-text {
+    transition: color 0.2s, opacity 0.2s;
+}
+
+/* Styles when a task is completed */
+.checklist-item.completed .label-text {
+    text-decoration: line-through;
+    color: var(--checklist-secondary-text-color);
+    opacity: 0.7;
+}
+
+.checklist-item.completed .checklist-item-label::before {
+    background-color: var(--checklist-accent-color);
+    border-color: var(--checklist-accent-color);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3E%3Cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+        
+/* End of Adapted Code */
+
+/*Plan Card Styling*/
+.plan-card{
+	background-color: #ffffff;
+	margin:1rem;
+	padding:1rem;
+	border-radius: 10px;
+	border: 3px solid #ffd900;
+}
+
+/*Transport Container Styling*/
+.transport-container {
+	background-color: #ffffff;
+	margin:1rem;
+	padding:1rem;
+	border-radius: 10px;
+	border: 3px solid #ffd900;
+}
+
+/*Plan Card Title Styling*/
+.plan-title {
+	font-weight: bold;
+	margin-left: 0.5rem;
+	font-size: 1.7rem;
+}
+
+/*Transport Card Styling*/
+.transport-card {
+	background-color: #ffffff;
+	margin:1rem;
+	padding:1rem;
+	border-radius: 10px;
+	border: 3px solid #ffd900;
+}
+
+/*Transport Card Title Styling*/
+.transport-card h2 {
+	font-weight: bold;
+	font-size: 1.7rem;
+}
+
+/*Link Card Container Styling*/
+.link-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: stretch;
+	gap: 10px;
+	padding: 2rem;
+	border-radius: 10px;
+}
+
+/*Link Card Styling*/
+.link-card {
+	background-color: #ffffff;
+	margin:1rem;
+	padding:1rem;
+	border-radius: 10px;
+	border: 3px solid #ffd900;
+}
+
+/*Text with Links Styling*/
+.link {
+	color:#000000;
+	background-color: #f8cc25;
+	text-decoration: none;
+	padding: 6px;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+/*Text with Links Styling when cursor hover*/
+.link:hover {
+	background-color: #1e293b;
+	color:#f8cc25;
+}
+
+/*Contact Form Styling*/
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+/*Contact Form Fieldset Styling*/
+fieldset {
+	display: block;
+	width: 90%;
+	margin:0 auto;
+	padding: 20px;
+	border: 2px solid #ffd900;
+	border-radius: 15px;
+	background-color: #ffffff;
+	color:#000000;
+}
+
+/*Contact Form Legend Styling*/
+legend {
+	color:#000000;
+}
+
+/*Form Styling*/
+form {
+	display: block;
+	width: 90%;
+	margin:0 auto;
+	padding: 20px;
+	border: 2px solid #1e293b;
+	border-radius: 15px;
+	background-color: #ffffff;
+	color:#000000;
+}
+
+/*Form Input Styling*/
+input[type="text"],input[type="email"], textarea {
+	width:97%;
+	padding:8px;
+	box-sizing: border-box;
+	border: 2px solid #1e293b;
+	border-radius: 10px;
+}
+
+/*Submit and Clear Button Container Styling*/
+#button {
+	color:#000000;
+	font-size:15px;
+	font-weight: bold;
+	padding:7px 20px;
+	background-color: #ffd900;
+	border-radius:15px;
+	border: 2px solid #ffd900;
+	width: 100px;
+}
+
+/*Submit and Clear Button Styling*/
+.buttons {
+	display: flex;
+	gap: 1rem;
+	margin-top: 0.5rem;
+	justify-content: right;
+	margin-right: 0.5rem;
+}
+
+/*Submit and Clear Button Styling when hover*/
+#button:hover {
+	background-color: #1e293b;
+	border: 2px solid #1e293b;
+	color:#f8cc25;
+}
+
+/* Smaller Screen Nav Bar Layout (e.g. tablets) */
+@media only screen and (max-width: 768px) {
+	.nav-bar {
+		flex-direction: column;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0.5rem;
+	}
+	.site-nav {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0.5rem;
+	}
+	.site-nav {
+		padding: 0.5rem;
+	}
+
+	.attraction-card img {
+		height: 200px;
+	}
+
+	.local-dish img {
+		height:200px;
+	}
+
+	.place-card img {
+		height: 200px;
+	}
+
+	.link-container {
+		grid-template-columns: 1fr;
+		gap: 5px;
+	}
+}
+
+/* Mobile Screen Nav Bar Layout */
+@media only screen and (max-width: 600px) {
+	.nav-bar {
+		position: static;
+		padding: 0.5rem;
+	}
+	.site-nav {
+		flex-direction: column;
+		width: 100%;
+		text-align: center;
+		gap: 0.5rem;
+	}
+	.site-nav a {
+		display: block;
+		width: 100%;
+		padding: 0.5rem;
+		font-size: 0.5rem;
+		box-sizing: border-box;
+	}
+
+	.attraction-container {
+		grid-template-columns: 1fr;
+	}
+
+	.attraction-card img {
+		height: 250px;
+	}
+
+	.local-dish {
+		grid-template-columns: 1fr;
+	}
+
+	.local-dish img {
+		height:200px;
+	}
+
+	.food-places {
+		grid-template-columns: 1fr;
+	}
+
+	.place-card img {
+		height: 200px;
+	}
+
+	.link-container {
+		grid-template-columns: 1fr;
+	}
+
+	.festival-card {
+	width: 500px;
+	}
+
+	.festival-card img {
+		height: 200px;
+	}
+}
